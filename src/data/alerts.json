@@ -1,0 +1,16 @@
+{
+  "weeklyAlerts": [
+    { "day": "Mon", "alerts": 5 },
+    { "day": "Tue", "alerts": 12 },
+    { "day": "Wed", "alerts": 8 },
+    { "day": "Thu", "alerts": 15 },
+    { "day": "Fri", "alerts": 7 },
+    { "day": "Sat", "alerts": 4 },
+    { "day": "Sun", "alerts": 9 }
+  ],
+  "severity": {
+    "high": 12,
+    "medium": 32,
+    "low": 84
+  }
+}
