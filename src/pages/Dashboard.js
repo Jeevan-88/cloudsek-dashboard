@@ -1,4 +1,5 @@
 import StatCard from "../components/StatCard";
+import AlertsChart from "../components/AlertsChart";
 
 export default function Dashboard() {
   return (
@@ -11,6 +12,8 @@ export default function Dashboard() {
         <StatCard title="Open Incidents" value="7" color="#ffaa00" />
         <StatCard title="Today Alerts" value="9" color="#66ff99" />
       </div>
+
+      <AlertsChart />
     </div>
   );
 }
