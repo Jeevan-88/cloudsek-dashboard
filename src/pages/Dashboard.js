@@ -1,5 +1,7 @@
 import StatCard from "../components/StatCard";
 import AlertsChart from "../components/AlertsChart";
+import SeverityChart from "../components/SeverityChart";
+
 
 export default function Dashboard() {
   return (
@@ -14,6 +16,8 @@ export default function Dashboard() {
       </div>
 
       <AlertsChart />
+      <SeverityChart />
+
     </div>
   );
 }
