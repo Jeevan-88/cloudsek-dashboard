@@ -1,11 +1,20 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
+import Dashboard from "./pages/Dashboard";
+import Alerts from "./pages/Alerts";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
-    <MainLayout>
-      <h1>Welcome to CloudSEK Dashboard</h1>
-      <p>This is your empty content area.</p>
-    </MainLayout>
+    <Router>
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/alerts" element={<Alerts />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
+      </MainLayout>
+    </Router>
   );
 }
 

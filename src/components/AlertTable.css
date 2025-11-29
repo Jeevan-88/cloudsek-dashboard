@@ -1,0 +1,30 @@
+.alert-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #111;
+  color: #fff;
+}
+
+.alert-table th,
+.alert-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+
+.alert-table tr:hover {
+  background: #1c1c1c;
+}
+
+.sev.low {
+  color: #5cb85c;
+}
+
+.sev.medium {
+  color: #f0ad4e;
+}
+
+.sev.high {
+  color: #d9534f;
+}

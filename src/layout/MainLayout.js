@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./MainLayout.css";
 
 export default function MainLayout({ children }) {
@@ -7,9 +8,15 @@ export default function MainLayout({ children }) {
       <aside className="sidebar">
         <h2>CloudSEK</h2>
         <ul>
-          <li>Dashboard</li>
-          <li>Alerts</li>
-          <li>Settings</li>
+          <li>
+            <Link to="/">Dashboard</Link>
+          </li>
+          <li>
+            <Link to="/alerts">Alerts</Link>
+          </li>
+          <li>
+            <Link to="/settings">Settings</Link>
+          </li>
         </ul>
       </aside>
 
@@ -18,9 +25,7 @@ export default function MainLayout({ children }) {
           <h3>Dashboard</h3>
         </nav>
 
-        <div className="content">
-          {children}
-        </div>
+        <div className="content">{children}</div>
       </div>
     </div>
   );
